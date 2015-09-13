@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- inject:js -->
+    <!-- endinject -->
+
+    <script src="bower_components/semantic/dist/semantic.js"></script>
+    <link rel="stylesheet" href="bower_components/semantic/dist/semantic.css">
+    
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <title>Semantic-UI</title>
+</head>
+<body>
+    <div class="ui secondary pointing menu">
+        <h3 class="header item">Brand</h3>
+        <a class="red item active" >tab 1</a>
+        <a class="yellow item" >tab 2</a>
+        <a class="green item" >tab 3</a>
+        <a class="blue item" >tab 4</a>
+    </div>
+    <script>
+$(function(){
+    $('.item').click(function(){
+        $('.item').removeClass('active')
+        $(this).addClass('active')
+    })
+})
+    </script>
+</body>
+</html>
